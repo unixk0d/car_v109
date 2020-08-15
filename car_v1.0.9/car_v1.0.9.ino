@@ -1,12 +1,14 @@
 #include <Wire.h>
-#include "U8glib.h" //Подключаем библиотеку для работы с дисплеем
+#include <SPI.h>
+#include <U8glib.h> //Подключаем библиотеку для работы с дисплеем
+#include <DS3231.h>// часы реального времени
+
 #include "digits32.h" //Добавление  шрифтов 
 #include "rus6x13B.h" //Добавление  шрифтов 
 #include "my10x14rus.h" //Добавление  шрифтов 
 #include  "rus4x6.h" //Добавление  шрифтов 
-#include <SPI.h>
 
-#include <DS3231.h>// часы реального времени
+
 DS3231  rtc(SDA, SCL);
 
 const int js0PinX = 0; // Аналог - Ось X джойстика №0
