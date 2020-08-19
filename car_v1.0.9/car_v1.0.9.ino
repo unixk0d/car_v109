@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include <SPI.h>
-#include <U8glib.h> //Подключаем библиотеку для работы с дисплеем
+#include <U8glib.h> //Подключаем библиотеку для работы с дисплеем 0
 #include <DS3231.h>// часы реального времени
 
 #include "digits32.h" //Добавление  шрифтов 
